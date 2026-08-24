@@ -107,7 +107,7 @@ P_filtered[i] = α · P_raw[i] + (1 − α) · P_filtered[i−1],   α = 0.15
 **Workaround — double-stage smoothing:** the derivative itself is passed through a second EMA (α = 0.08) before being compared against the trigger threshold, giving the stable dark-red drop-rate curve in Fig. 1.
 
 <p align="center">
-<img src="/assets/images/PneumoGuard/fig1-pressure-filtering.png" width="800"><br/>
+<img src="assets/fig1-pressure-filtering.png" width="800"><br/>
 <i>Fig. 1 — Raw vs. EMA-filtered BMP180 signal and the resulting double-smoothed pressure drop-rate (simulated data, illustrating the filtering algorithm)</i>
 </p>
 
@@ -125,7 +125,7 @@ BEI_norm[i] = BEI[i] / max(BEI)
 Laboured breathing manifests as elevated-amplitude, semi-periodic motion, which raises windowed variance measurably above the quiet-breathing baseline — this is a standard technique for turning a noisy motion signal into a stable physiological index without needing spectral analysis (FFT), which would be too computationally expensive to run continuously on the ESP32.
 
 <p align="center">
-<img src="/assets/images/PneumoGuard/fig2-breathing-effort-index.png" width="800"><br/>
+<img src="assets/fig2-breathing-effort-index.png" width="800"><br/>
 <i>Fig. 2 — Breathing-effort index (BEI) derived from MPU6050 windowed variance, showing detection of a simulated laboured-breathing episode</i>
 </p>
 
@@ -153,7 +153,7 @@ Risk tier =  LOW      if R(t) ≤ 0.35
 The weights reflect that pressure-drop rate is the dominant clinical predictor (≈80% of exacerbations per the literature reviewed), with breathing effort and context acting as corroborating/adjusting signals rather than equal partners — this avoids a false HIGH alert being triggered by motion noise alone.
 
 <p align="center">
-<img src="/assets/images/PneumoGuard/fig3-risk-fusion.png" width="800"><br/>
+<img src="assets/fig3-risk-fusion.png" width="800"><br/>
 <i>Fig. 3 — Composite risk-fusion score R(t) over time with LOW/MEDIUM/HIGH alert bands (simulated data, illustrating the weighted-fusion algorithm)</i>
 </p>
 
@@ -162,7 +162,7 @@ The weights reflect that pressure-drop rate is the dominant clinical predictor (
 Before fixing the threshold constants above, the underlying hypothesis — that pressure-drop events precede COPD hospital admissions — is checked against real-world outcome data, using a simple linear-correlation plot of monthly pressure-drop-event counts (IMD Kerala) against regional COPD admissions:
 
 <p align="center">
-<img src="/assets/images/PneumoGuard/fig4-correlation-validation.png" width="700"><br/>
+<img src="assets/fig4-correlation-validation.png" width="700"><br/>
 <i>Fig. 4 — Illustrative validation method: correlating pressure-drop-event frequency with COPD hospital admissions over a 6-month window (synthetic data shown here to demonstrate the method; final proposal will substitute real IMD/hospital records)</i>
 </p>
 
