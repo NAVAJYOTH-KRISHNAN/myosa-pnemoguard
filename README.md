@@ -20,6 +20,10 @@ tags:
 We thank our faculty mentor, **Dr. Nishanth N**, Department of Electronics and Communication Engineering, TKM College of Engineering, for his guidance throughout the ideation of PneumoGuard. We also acknowledge **IEEE MYOSA 6.0** and the MYOSA Mini Kit ecosystem for providing an integrated sensor platform that let us prototype a clinically-motivated idea without first having to source and bring up individual sensor breakout boards.
 
 ---
+<p align="center">
+<img src="assets/cover.png" width="800"><br/>
+<i>PneumoGuard</i>
+</p>
 
 ## Overview
 
@@ -48,22 +52,31 @@ We thank our faculty mentor, **Dr. Nishanth N**, Department of Electronics and C
 ### Images
 
 <p align="center">
-<img src="/assets/images/PneumoGuard/oled-risk-gauge.jpg" width="800"><br/>
-<i>OLED display showing live barometric pressure trend and colour-coded risk gauge</i>
-</p>
-
-<p align="center">
-<img src="/assets/images/PneumoGuard/wearable-enclosure.jpg" width="800"><br/>
-<i>Chest-strap mounted 3D-printed enclosure housing the MYOSA Mini board and battery</i>
+<img src="/assets/cover.png" width="800"><br/>
+<i>PneumoGuard</i>
 </p>
 
 ### Videos
 
 <video controls width="100%">
-<source src="/pneumoguard-live-demo.mp4" type="video/mp4">
+  <source src="videos/myosa-demo.mp4" type="video/mp4">
+  <!-- This text only shows if the browser doesn't support the video tag entirely -->
+  Your browser does not support the video tag.
 </video>
 
-*(5-minute live-demo recording: power-on and live pressure trend, chilled-bottle pressure-drop simulation triggering a MEDIUM→HIGH escalation, tilt-based breathing-effort simulation, indoor/night context shift via the APDS-9960, and the six-month IMD Kerala weather vs. COPD hospital-admission correlation chart.)*
+<br>
+<i>Demo Video</i><br>
+<i>If the video is not loaded, you can refer to the link <a href="https://drive.google.com/file/d/1XbHQ_bCuon8WHASx3V6HSJImWwQOupHc/view?usp=sharing">here</a>.</i>
+
+<video controls width="100%">
+  <source src="videos/myosa-presentaion.mp4" type="video/mp4">
+  <!-- This text only shows if the browser doesn't support the video tag entirely -->
+  Your browser does not support the video tag.
+</video>
+
+<br>
+<i>Demo Video</i><br>
+<i>If the video is not loaded, you can refer to the link <a href="https://drive.google.com/file/d/1XWFNMp34jiv2y-eyGPzSh6iasK4rQmyM/view?usp=sharing">here</a>.</i>
 
 ---
 
