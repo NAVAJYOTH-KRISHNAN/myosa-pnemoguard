@@ -1,6 +1,6 @@
 ---
 publishDate: 2026-08-24
-title: PneumoGuard - AI-Assisted COPD Exacerbation Early Warning System
+title: PneumoGuard - COPD Exacerbation Early Warning System
 excerpt: A sub-₹500 wearable that senses the barometric, humidity, and motion triggers behind COPD exacerbations and warns patients hours before an acute episode.
 image: PneumoGuard/pneumoguard-cover.jpg
 tags:
