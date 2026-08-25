@@ -19,6 +19,15 @@ tags:
 
 We thank our faculty mentor, **Dr. Nishanth N**, Department of Electronics and Communication Engineering, TKM College of Engineering, for his guidance throughout the ideation of PneumoGuard. We also acknowledge **IEEE MYOSA 6.0** and the MYOSA Mini Kit ecosystem for providing an integrated sensor platform that let us prototype a clinically-motivated idea without first having to source and bring up individual sensor breakout boards.
 
+**Team Members:**
+
+->Ribin KV
+
+->Nivedita Ranjish
+
+->Navajyoth Krishnan D
+
+
 ---
 <p align="center">
 <img src="assets/cover.png" width="800"><br/>
@@ -194,20 +203,23 @@ This correlation-and-linear-fit approach is a standard, low-overhead way to sani
 ---
 
 ## Usage Instructions
+**Clone the Repository**
+Start by cloning the project repository to your local machine and navigating into the project folder:
 
-1. Charge the PneumoGuard wearable via its Li-Po charging circuit and strap it to the chest, sensor housing facing outward.
-2. Power on the device; the OLED will boot into the live pressure-trend and risk-gauge view.
-3. Wear continuously during the day for best trend accuracy — the 30-minute sliding window needs a warm-up period after power-on before the risk score stabilises.
-4. When the buzzer sounds at MEDIUM or HIGH risk, check the OLED risk gauge and follow your physician's advised action plan (e.g., preventive inhaler use or contacting your doctor).
-5. Caregivers/clinicians can log in to the companion cloud dashboard to review historical pressure, motion, and risk-tier trends for telemedicine follow-up.
-
+```bash
+git clone [https://github.com/NAVAJYOTH-KRISHNAN/myosa-pneumoguard.git](https://github.com/NAVAJYOTH-KRISHNAN/myosa-pneumoguard.git)
+cd myosa-pneumoguard
+```
 Example firmware upload command (Arduino CLI on the MYOSA Mini / ESP32 target):
 
 ```plaintext
 arduino-cli upload -p /dev/ttyUSB0 --fqbn esp32:esp32:esp32 ./pneumoguard_firmware
+
+(also setup the web dashboard file as given in the repo)
 ```
 
 Example on-device risk-scoring snippet:
+(Algorithm Pseudocode .The code is in C!) 
 
 ```python
 # Simplified illustrative snippet of the sliding-window risk score
@@ -242,11 +254,6 @@ def compute_risk(pressure_window, accel_window, is_indoor):
 ---
 
 ## Requirements / Installation
-
-```bash
-pip install numpy pandas matplotlib
-```
-
 Firmware dependencies (Arduino/PlatformIO libraries):
 
 ```bash
@@ -292,4 +299,4 @@ This project is released under the MIT License. See `LICENSE` for details.
 
 ## Contribution Notes (Optional)
 
-We welcome feedback from the MYOSA mentor panel and community, particularly on refining the risk-fusion weighting and expanding the validation dataset beyond six months of IMD Kerala data. Issues and suggestions can be raised via the project's GitHub repository once published.# myosa-pnemoguard
+We welcome feedback from the MYOSA mentor panel and community, particularly on refining the risk-fusion weighting and expanding the validation dataset beyond six months of IMD Kerala data. Issues and suggestions can be raised via the project's GitHub repository once published.
