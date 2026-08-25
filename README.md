@@ -106,6 +106,11 @@ The **OLED display** renders the live pressure trend as a simple line graph alon
 ### 5. Caregiver Dashboard & Longitudinal Validation
 Every reading (raw sensor values, computed features, and risk tier) is simultaneously transmitted over Wi-Fi/BLE to a lightweight cloud dashboard for caregiver or telemedicine review. For validation, we correlate six months of IMD (India Meteorological Department) Kerala weather data — specifically barometric pressure and humidity time series — against regional COPD hospital-admission records, using time-series overlay plots to visually and statistically confirm that admission spikes cluster around the pressure-drop events PneumoGuard is designed to detect. This kind of retrospective correlation plotting is a standard method for validating an environmental-trigger hypothesis before committing to a fixed on-device alert threshold, and it also lets us sanity-check the sensor's real-world reliability against an independent, clinically meaningful outcome (hospital admissions) rather than relying on sensor accuracy specs alone.
 
+<p align="center">
+<img src="assets/warning.jpeg" width="800"><br/>
+<i>Web Dashboard</i>
+</p>
+
 ---
 
 ## Scientific Methodology & Algorithm Design
@@ -273,6 +278,7 @@ Hardware requirements:
 /myosa-pneumoguard
 ├── assets/
 │   ├── cover.jpeg
+│   ├── warning.jpeg
 │   ├── cover.png
 │   ├── fig1-pressure-filtering.png
 │   ├── fig2-breathing-effort-index.png
