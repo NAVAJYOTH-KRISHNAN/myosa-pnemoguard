@@ -75,7 +75,7 @@ We thank our faculty mentor, **Dr. Nishanth N**, Department of Electronics and C
 </video>
 
 <br>
-<i>Demo Video</i><br>
+<i>Presentation Video</i><br>
 <i>If the video is not loaded, you can refer to the link <a href="https://drive.google.com/file/d/1XWFNMp34jiv2y-eyGPzSh6iasK4rQmyM/view?usp=sharing">here</a>.</i>
 
 ---
@@ -263,25 +263,23 @@ Hardware requirements:
 ## File Structure (Optional)
 
 ```
-/PneumoGuard
-├─ firmware/
-│  ├─ pneumoguard_firmware.ino
-│  └─ risk_scoring.h
-├─ dashboard/
-│  └─ index.html
-├─ validation/
-│  ├─ imd_weather_vs_admissions.py
-│  └─ correlation_plot.png
-├─ assets/
-│  ├─ fig1-pressure-filtering.png
-│  ├─ fig2-breathing-effort-index.png
-│  ├─ fig3-risk-fusion.png
-│  └─ fig4-correlation-validation.png
-├─ pneumoguard-cover.jpg
-├─ oled-risk-gauge.jpg
-├─ wearable-enclosure.jpg
-├─ pneumoguard-live-demo.mp4
-└─ pneumoguard-myosa.md
+/myosa-pneumoguard
+├── assets/
+│   ├── cover.jpeg
+│   ├── cover.png
+│   ├── fig1-pressure-filtering.png
+│   ├── fig2-breathing-effort-index.png
+│   ├── fig3-risk-fusion.png
+│   └── fig4-correlation-validation.png
+├── dashboard/
+│   └── appscript.js
+├── firmware/
+│   └── pneumoguard_firmware.ino
+├── videos/
+│   ├── myosa-demo.mp4
+│   └── myosa-presentation.mp4
+├── LICENSE
+└── README.md
 ```
 
 ---
